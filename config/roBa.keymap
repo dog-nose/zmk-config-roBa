@@ -9,7 +9,16 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+
+    // 同じキーを tap した直後（200ms以内）に再度押した場合は、長押ししても hold（修飾キー）
+    // ではなく tap 扱いにする。tap → そのまま長押しで同じ文字を連打（リピート）できる。
+    quick-tap-ms = <200>;
+};
+
+&lt {
+    // mod-tap と同様、同じキーを tap した直後（200ms以内）の再押下は hold（レイヤー）ではなく
+    // tap として扱い、同じキーを連打できるようにする。
+    quick-tap-ms = <200>;
 };
 
 &trackball {
