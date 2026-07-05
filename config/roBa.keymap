@@ -25,7 +25,9 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // トラックボールを動かしてもマウスレイヤーへ自動で切り替えない（automouse 無効化）。
+    // クリックは jk / kl のコンボキーで行う。
+    // automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
@@ -53,6 +55,29 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+        };
+
+        // J + K 同時押しで左クリック
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+            timeout-ms = <50>;
+        };
+
+        // K + L 同時押しで右クリック
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+            timeout-ms = <50>;
+        };
+
+        // , + . 同時押しでスクロールレイヤー(5)をトグル。
+        // ON の間はトラックボールの動きがマウスホイールのスクロールになる（scroll-layers = <5>）。
+        // もう一度 , + . を押すと OFF に戻る。
+        scroll_toggle {
+            bindings = <&tog 5>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
         };
     };
 
