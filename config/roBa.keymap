@@ -25,9 +25,9 @@
 };
 
 &trackball {
-    // トラックボールを動かしてもマウスレイヤーへ自動で切り替えない（automouse 無効化）。
-    // クリックは jk / kl のコンボキーで行う。
-    // automouse-layer = <4>;
+    // トラックボールを動かすとマウスレイヤー(4)へ自動で切り替える（automouse）。
+    // 発動の鈍さ（入りにくさ）は roBa_R.conf の CONFIG_PMW3610_MOVEMENT_THRESHOLD で調整する。
+    automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
