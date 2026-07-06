@@ -27,6 +27,7 @@
 &trackball {
     // トラックボールを動かすとマウスレイヤー(4)へ自動で切り替える（automouse）。
     // 発動の鈍さ（入りにくさ）は roBa_R.conf の CONFIG_PMW3610_MOVEMENT_THRESHOLD で調整する。
+
     automouse-layer = <4>;
     scroll-layers = <5>;
 
@@ -60,6 +61,7 @@
         // , + . 同時押しでスクロールレイヤー(5)をトグル。
         // ON の間はトラックボールの動きがマウスホイールのスクロールになる（scroll-layers = <5>）。
         // もう一度 , + . を押すと OFF に戻る。
+
         scroll_toggle {
             bindings = <&tog 5>;
             key-positions = <31 32>;
@@ -144,13 +146,13 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &to 0     &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &to 0   &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         SCROLL {
