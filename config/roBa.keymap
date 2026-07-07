@@ -122,6 +122,8 @@
 &mt LSHIFT N1  &kp N2    &kp N3          &kp N4     &kp N5     &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp N6     &kp N7            &kp N8             &kp N9             &mt RIGHT_SHIFT N0
 &trans         &trans    &trans          &trans     &trans     &trans              &trans           &trans                                                             &trans
             >;
+
+            sensor-bindings = <&encoder_scroll>;
         };
 
         mark {
@@ -131,17 +133,19 @@
 &mt LEFT_SHIFT N1  &kp N2  &kp N3    &kp N4    &kp N5       &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N6     &kp N7                &kp N8                 &kp N9            &mt RIGHT_SHIFT N0
 &trans             &trans  &trans    &trans    &trans       &trans                    &trans                 &trans                                                                    &trans
             >;
+
+            sensor-bindings = <&encoder_scroll>;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans          &trans              &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans          &trans              &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                              &trans
+&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans              &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         MOUSE {
