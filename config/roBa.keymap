@@ -117,10 +117,10 @@
 
         NUM {
             bindings = <
-&kp TILDE      &none     &kp UP_ARROW    &none      &kp PIPE                                        &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES  &kp BACKSLASH
-&kp LCTRL      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS  &trans              &none            &kp EQUAL  &kp LESS_THAN     &kp GREATER_THAN   &kp COLON          &trans
-&mt LSHIFT N1  &kp N2    &kp N3          &kp N4     &kp N5     &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp N6     &kp N7            &kp N8             &kp N9             &mt RIGHT_SHIFT N0
-&trans         &trans    &trans          &trans     &trans     &trans              &trans           &trans                                                             &trans
+&kp TILDE      &none   &none              &none      &kp PIPE                                       &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &kp BACKSLASH
+&kp LCTRL      &none   &kp DOUBLE_QUOTES  &kp MINUS  &none     &trans              &none            &none     &kp EQUAL     &kp COLON  &none      &trans
+&mt LSHIFT N1  &kp N2  &kp N3             &kp N4     &kp N5    &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp N6    &kp N7        &kp N8     &kp N9     &mt RIGHT_SHIFT N0
+&trans         &trans  &trans             &trans     &trans    &trans              &trans           &trans                                        &trans
             >;
 
             sensor-bindings = <&encoder_scroll>;
@@ -128,10 +128,10 @@
 
         mark {
             bindings = <
-&kp EXCL           &kp AT  &kp HASH  &kp DLLR  &kp PERCENT                                                   &kp CARET  &kp AMPERSAND         &kp ASTERISK           &kp SINGLE_QUOTE  &none
-&mt LCTRL GRAVE    &none   &none     &none     &kp UNDER    &trans                    &none                  &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &trans
-&mt LEFT_SHIFT N1  &kp N2  &kp N3    &kp N4    &kp N5       &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N6     &kp N7                &kp N8                 &kp N9            &mt RIGHT_SHIFT N0
-&trans             &trans  &trans    &trans    &trans       &trans                    &trans                 &trans                                                                    &trans
+&kp EXCL           &kp AT  &kp HASH          &kp DLLR   &kp PERCENT                                                   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &none   &none
+&mt LCTRL GRAVE    &none   &kp SINGLE_QUOTE  &kp UNDER  &none        &trans                    &none                  &none      &kp PLUS       &kp SEMI      &none   &trans
+&mt LEFT_SHIFT N1  &kp N2  &kp N3            &kp N4     &kp N5       &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N6     &kp N7         &kp N8        &kp N9  &mt RIGHT_SHIFT N0
+&trans             &trans  &trans            &trans     &trans       &trans                    &trans                 &trans                                          &trans
             >;
 
             sensor-bindings = <&encoder_scroll>;
