@@ -70,25 +70,25 @@
 
         kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
         eiji {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <13 12>;
+            key-positions = <12 11>;
             layers = <0>;
         };
 
         back-def-0 {
             bindings = <&to 0>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
             layers = <4>;
         };
 
         back-def-1 {
             bindings = <&to 0>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
             layers = <4>;
         };
     };
@@ -130,10 +130,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W              &kp E         &kp R             &kp T                                                        &kp Y                &kp U  &lt 5 I    &kp O    &kp P
-&mt LCTRL A       &kp S              &kp D         &kp F             &kp G               &kp LC(UP_ARROW)      &kp BACKSLASH      &kp H                &kp J  &kp K      &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X              &kp C         &kp V             &kp B               &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp N                &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LG(BACKSLASH)  &kp LEFT_ALT  &lt 3 LANGUAGE_2  &mt LEFT_GUI SPACE  &mo 2                 &lt 1 BACKSPACE    &mt RIGHT_GUI SPACE                             &to 4
+&kp Q             &kp W              &kp E         &kp R  &kp T                                                        &kp Y                &kp U  &lt 5 I    &kp O    &kp P
+&mt LCTRL A       &kp S              &kp D         &kp F  &kp G               &kp LC(UP_ARROW)      &kp BACKSLASH      &kp H                &kp J  &kp K      &kp L    &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X              &kp C         &kp V  &kp B               &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp N                &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp TAB           &kp LG(BACKSLASH)  &kp LEFT_ALT  &mo 3  &mt LEFT_GUI SPACE  &mo 2                 &lt 1 BACKSPACE    &mt RIGHT_GUI SPACE                             &to 4
             >;
 
             sensor-bindings = <&encoder_scroll>;
@@ -177,7 +177,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 5   &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &to 0   &trans  &to 0       &to 0   &trans                              &to 0
+&trans  &trans  &trans  &to 0   &trans  &to 0       &to 0   &trans                              &none
             >;
 
             sensor-bindings = <&encoder_scroll>;
